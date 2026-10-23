@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Valori di riserva: in esecuzione vengono sovrascritti dalle variabili generate dal JSON (lib/theme.ts). */
+:root {
+  --color-background: 247 244 238;
+  --color-surface: 255 255 255;
+  --color-foreground: 27 42 46;
+  --color-muted: 94 107 106;
+  --color-primary: 31 74 76;
+  --color-primary-foreground: 247 244 238;
+  --color-secondary: 125 143 85;
+  --color-accent: 140 96 41;
+  --color-border: 226 219 207;
+  --color-overlay: 14 26 28;
+  --radius: 0.375rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-background font-body text-foreground antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgb(var(--color-accent) / 0.3);
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 3px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 sm:py-32;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.3em] text-accent;
+  }
+
+  .nav-link {
+    @apply relative py-2 transition-opacity hover:opacity-100;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-current transition-transform duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after {
+    @apply scale-x-100;
+  }
+}
+
+/* Animazioni di comparsa (components/ui/Reveal.tsx). Lo stato nascosto vale solo con JS attivo. */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.js [data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "siteUrl": "https://salicornia-demo.vercel.app",
+    "lang": "it",
+    "locale": "it_IT",
+    "title": "Salicornia · Ristorante di pesce marchigiano a Pesaro",
+    "description": "Cucina di mare marchigiana sul lungomare di Pesaro: pescato dell'Adriatico, paste fatte a mano e una carta dei vini dedicata alle Marche. Prenota il tuo tavolo.",
+    "keywords": [
+      "ristorante Pesaro",
+      "ristorante di pesce Pesaro",
+      "cucina marchigiana",
+      "brodetto alla pesarese",
+      "ristorante lungomare Pesaro",
+      "cena romantica Pesaro"
+    ],
+    "ogImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&h=630&q=80",
+    "favicon": "/favicon.svg"
+  },
+
+  "general": {
+    "name": "Salicornia",
+    "payoff": "Cucina di mare marchigiana",
+    "cuisine": ["Marchigiana", "Pesce", "Mediterranea"],
+    "priceRange": "€€€",
+    "logo": {
+      "src": "",
+      "srcOnDark": "",
+      "alt": "Salicornia ristorante",
+      "width": 160,
+      "height": 48
+    }
+  },
+
+  "theme": {
+    "preset": "elegante",
+    "colors": {},
+    "fonts": { "heading": "cormorant", "body": "inter" },
+    "radius": "0.375rem"
+  },
+
+  "layout": {
+    "order": ["hero", "about", "menu", "experiences", "reviews", "contact"]
+  },
+
+  "contact": {
+    "phone": "+390721000000",
+    "phoneDisplay": "+39 0721 000 000",
+    "email": "info@salicornia-demo.it",
+    "whatsapp": "+393330000000",
+    "whatsappDisplay": "+39 333 000 0000",
+    "address": {
+      "street": "Viale Trieste 1",
+      "city": "Pesaro",
+      "postalCode": "61121",
+      "province": "PU",
+      "region": "Marche",
+      "country": "IT"
+    },
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Viale+Trieste+Pesaro",
+    "mapsEmbedUrl": "https://www.google.com/maps?q=Viale+Trieste,+Pesaro&output=embed",
+    "coordinates": { "lat": 43.9165, "lng": 12.9087 }
+  },
+
+  "hours": {
+    "note": "In estate aperti tutti i giorni. Cucina aperta fino a 30 minuti prima della chiusura.",
+    "days": [
+      { "label": "Lunedì", "dayOfWeek": "Monday", "closed": true, "slots": [] },
+      { "label": "Martedì", "dayOfWeek": "Tuesday", "slots": [{ "opens": "19:30", "closes": "23:00" }] },
+      { "label": "Mercoledì", "dayOfWeek": "Wednesday", "slots": [{ "opens": "19:30", "closes": "23:00" }] },
+      { "label": "Giovedì", "dayOfWeek": "Thursday", "slots": [{ "opens": "12:30", "closes": "14:30" }, { "opens": "19:30", "closes": "23:00" }] },
+      { "label": "Venerdì", "dayOfWeek": "Friday", "slots": [{ "opens": "12:30", "closes": "14:30" }, { "opens": "19:30", "closes": "23:30" }] },
+      { "label": "Sabato", "dayOfWeek": "Saturday", "slots": [{ "opens": "12:30", "closes": "14:30" }, { "opens": "19:30", "closes": "23:30" }] },
+      { "label": "Domenica", "dayOfWeek": "Sunday", "slots": [{ "opens": "12:30", "closes": "15:00" }] }
+    ]
+  },
+
+  "booking": {
+    "enabled": true,
+    "provider": "form",
+    "url": "",
+    "label": "Prenota un tavolo",
+    "whatsappMessage": "Buongiorno, vorrei prenotare un tavolo da Salicornia.",
+    "formChannel": "whatsapp",
+    "formAnchor": "prenota",
+    "maxGuests": 12,
+    "note": "Per gruppi oltre 12 persone o eventi privati contattaci telefonicamente."
+  },
+
+  "hero": {
+    "enabled": true,
+    "eyebrow": "Pesaro · Lungomare",
+    "title": "Il mare dell'Adriatico, nel piatto",
+    "subtitle": "Pescato del giorno, paste tirate a mano e i sapori delle Marche, a pochi passi dalla spiaggia.",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80", "alt": "Tavola apparecchiata con piatti di pesce" },
+      { "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80", "alt": "Sala del ristorante illuminata la sera" },
+      { "src": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2000&q=80", "alt": "Terrazza del ristorante al tramonto" }
+    ],
+    "overlayOpacity": 0.55,
+    "slideInterval": 6000,
+    "highlights": ["Pescato dell'Adriatico", "Paste fatte a mano", "Vini marchigiani"],
+    "ctas": [
+      { "label": "Prenota un tavolo", "action": "booking", "variant": "primary" },
+      { "label": "Scopri il menu", "action": "link", "href": "/#menu", "variant": "outline" }
+    ]
+  },
+
+  "about": {
+    "enabled": true,
+    "id": "cucina",
+    "navLabel": "La Cucina",
+    "eyebrow": "La nostra storia",
+    "title": "Una cucina che nasce dal porto",
+    "story": [
+      "Salicornia prende il nome dall'erba di mare che cresce spontanea lungo le coste adriatiche: sapida, verde, sorprendente. È la stessa idea che guida la nostra cucina, fatta di ingredienti semplici trattati con rispetto.",
+      "Ogni mattina scegliamo il pescato direttamente dalle barche del porto di Pesaro. Le paste vengono tirate a mano in cucina, le verdure arrivano dagli orti delle colline marchigiane e il pane è lievitato con lievito madre."
+    ],
+    "image": { "src": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1400&q=80", "alt": "Cucina del ristorante al lavoro" },
+    "philosophy": {
+      "title": "La nostra filosofia",
+      "items": [
+        { "title": "Pescato locale", "text": "Solo pesce dell'Adriatico, scelto ogni giorno in base a ciò che offre il mare." },
+        { "title": "Stagionalità", "text": "Il menu cambia con le stagioni e segue il ritmo dei produttori del territorio." },
+        { "title": "Tradizione viva", "text": "Le ricette marchigiane di famiglia, rilette con tecnica e leggerezza." }
+      ]
+    },
+    "chef": {
+      "name": "Marco Rinaldi",
+      "role": "Chef e fondatore",
+      "bio": [
+        "Pesarese, cresciuto tra le reti dei pescatori e la cucina della nonna, Marco ha lavorato in ristoranti stellati in Italia e in Francia prima di tornare a casa.",
+        "Nel 2016 ha aperto Salicornia con un'idea chiara: raccontare l'Adriatico con onestà, senza effetti speciali."
+      ],
+      "quote": "Il mare decide il menu. Io cerco solo di non rovinare quello che ci regala.",
+      "image": { "src": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80", "alt": "Lo chef Marco Rinaldi in cucina" }
+    },
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1000&q=80", "alt": "Piatto di crudo di pesce" },
+      { "src": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=1000&q=80", "alt": "Spaghetti ai frutti di mare" },
+      { "src": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80", "alt": "Calici di vino bianco" },
+      { "src": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1000&q=80", "alt": "Piatto principale impiattato" }
+    ]
+  },
+
+  "menu": {
+    "enabled": true,
+    "id": "menu",
+    "navLabel": "Menu",
+    "eyebrow": "Alla carta",
+    "title": "Il nostro menu",
+    "intro": "Il menu segue il mare e le stagioni: alcuni piatti possono variare in base al pescato del giorno.",
+    "currency": "EUR",
+    "note": "Coperto € 3. Il pesce destinato a essere consumato crudo è sottoposto ad abbattimento termico secondo il Reg. CE 853/2004. Per allergie o intolleranze chiedi al personale di sala.",
+    "pdfUrl": "",
+    "tags": {
+      "specialita": { "label": "Specialità della casa", "symbol": "★" },
+      "vegetariano": { "label": "Vegetariano", "symbol": "V" },
+      "vegano": { "label": "Vegano", "symbol": "VG" },
+      "senza-glutine": { "label": "Senza glutine", "symbol": "GF" },
+      "crudo": { "label": "Pesce crudo", "symbol": "C" }
+    },
+    "allergens": [
+      { "id": 1, "name": "Cereali contenenti glutine" },
+      { "id": 2, "name": "Crostacei" },
+      { "id": 3, "name": "Uova" },
+      { "id": 4, "name": "Pesce" },
+      { "id": 5, "name": "Arachidi" },
+      { "id": 6, "name": "Soia" },
+      { "id": 7, "name": "Latte" },
+      { "id": 8, "name": "Frutta a guscio" },
+      { "id": 9, "name": "Sedano" },
+      { "id": 10, "name": "Senape" },
+      { "id": 11, "name": "Semi di sesamo" },
+      { "id": 12, "name": "Anidride solforosa e solfiti" },
+      { "id": 13, "name": "Lupini" },
+      { "id": 14, "name": "Molluschi" }
+    ],
+    "categories": [
+      {
+        "id": "antipasti",
+        "name": "Antipasti",
+        "items": [
+          { "name": "Crudo dell'Adriatico", "description": "Selezione del giorno di pesce, crostacei e molluschi crudi, salicornia e agrumi.", "price": 28, "allergens": [2, 4, 14], "tags": ["specialita", "crudo", "senza-glutine"] },
+          { "name": "Moscioli alla marinara", "description": "Cozze selvatiche di Portonovo, pomodoro, aglio, prezzemolo e crostone di pane.", "price": 16, "allergens": [1, 14] },
+          { "name": "Olive all'ascolana di mare", "description": "Olive ripiene di pesce bianco, impanate e fritte, maionese al limone.", "price": 12, "allergens": [1, 3, 4] },
+          { "name": "Canocchie al vapore", "description": "Canocchie dell'Adriatico, olio extravergine marchigiano e salicornia saltata.", "price": 18, "allergens": [2], "tags": ["senza-glutine"] }
+        ]
+      },
+      {
+        "id": "primi",
+        "name": "Primi",
+        "items": [
+          { "name": "Passatelli asciutti, vongole e salicornia", "description": "Passatelli fatti a mano, vongole veraci e bottarga di muggine.", "price": 20, "allergens": [1, 3, 4, 7, 14], "tags": ["specialita"] },
+          { "name": "Spaghettone alle poveracce", "description": "Pasta di Gragnano, poveracce dell'Adriatico, aglio, olio e peperoncino.", "price": 19, "allergens": [1, 14] },
+          { "name": "Tagliolini al nero con seppie", "description": "Tagliolini al nero di seppia, ragù bianco di seppie e piselli.", "price": 19, "allergens": [1, 3, 14] },
+          { "name": "Risotto all'orto", "description": "Carnaroli mantecato con verdure di stagione e olio alle erbe.", "price": 16, "allergens": [9], "tags": ["vegano", "senza-glutine"] }
+        ]
+      },
+      {
+        "id": "secondi",
+        "name": "Secondi",
+        "items": [
+          { "name": "Brodetto alla pesarese", "description": "La zuppa di pesce della tradizione, con pomodoro e aceto, servita con pane abbrustolito. Su prenotazione, minimo due persone.", "price": 32, "allergens": [1, 2, 4, 12, 14], "tags": ["specialita"] },
+          { "name": "Rana pescatrice in porchetta", "description": "Rana pescatrice con finocchietto selvatico, lardo e patate al forno.", "price": 26, "allergens": [4], "tags": ["senza-glutine"] },
+          { "name": "Grigliata dell'Adriatico", "description": "Pesce del giorno, mazzancolle e calamari alla griglia con verdure.", "price": 30, "allergens": [2, 4, 14], "tags": ["senza-glutine"] },
+          { "name": "Cavolfiore arrosto", "description": "Cavolfiore alla brace, crema di ceci, capperi e mandorle tostate.", "price": 18, "allergens": [8], "tags": ["vegano", "senza-glutine"] }
+        ]
+      },
+      {
+        "id": "dolci",
+        "name": "Dolci",
+        "items": [
+          { "name": "Zuppa inglese", "description": "Crema pasticcera, crema al cioccolato e pan di Spagna all'alchermes.", "price": 8, "allergens": [1, 3, 7] },
+          { "name": "Ciambellone e vino cotto", "description": "Ciambellone della tradizione marchigiana con un calice di vino cotto.", "price": 9, "allergens": [1, 3, 7, 12], "tags": ["specialita"] },
+          { "name": "Sorbetto al limone", "description": "Limoni biologici e menta fresca.", "price": 6, "tags": ["vegano", "senza-glutine"] }
+        ]
+      },
+      {
+        "id": "vini",
+        "name": "Carta dei Vini",
+        "description": "Una selezione dedicata alle cantine delle Marche. Prezzi per calice e bottiglia.",
+        "items": [
+          { "name": "Bianchello del Metauro DOC", "description": "Fresco e sapido, il bianco del territorio pesarese.", "price": "Calice € 6 · Bottiglia € 24", "allergens": [12] },
+          { "name": "Verdicchio dei Castelli di Jesi Classico Superiore", "description": "Mandorla, agrumi e grande mineralità.", "price": "Calice € 8 · Bottiglia € 34", "allergens": [12] },
+          { "name": "Offida Pecorino DOCG", "description": "Pieno, aromatico, perfetto con i crudi.", "price": "Calice € 8 · Bottiglia € 36", "allergens": [12] },
+          { "name": "Rosso Conero DOC", "description": "Montepulciano in purezza, per chi non rinuncia al rosso.", "price": "Calice € 7 · Bottiglia € 30", "allergens": [12] }
+        ]
+      }
+    ]
+  },
+
+  "experiences": {
+    "enabled": true,
+    "id": "esperienze",
+    "navLabel": "Esperienze",
+    "eyebrow": "Eventi e serate",
+    "title": "Esperienze da Salicornia",
+    "intro": "Degustazioni, serate a tema e momenti speciali da vivere insieme.",
+    "items": [
+      {
+        "title": "Il mare in sette atti",
+        "badge": "Degustazione",
+        "date": "Ogni venerdì e sabato",
+        "description": "Un percorso di sette portate scelte dallo chef in base al pescato del giorno, con abbinamento vini facoltativo.",
+        "price": 75,
+        "image": { "src": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80", "alt": "Piatto del menu degustazione" },
+        "cta": { "label": "Prenota la degustazione", "action": "booking" }
+      },
+      {
+        "title": "Aperitivo al tramonto",
+        "badge": "Estate",
+        "date": "Giugno – settembre, dalle 18:30",
+        "description": "Calici di Bianchello, crudi e fritture in terrazza mentre il sole scende sul mare.",
+        "price": 25,
+        "image": { "src": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80", "alt": "Cocktail al tramonto" },
+        "cta": { "label": "Riserva un posto", "action": "booking" }
+      },
+      {
+        "title": "Serate con le cantine",
+        "badge": "Vino",
+        "date": "Un giovedì al mese",
+        "description": "Incontri con i produttori delle Marche: cena a quattro mani tra cucina e vigna, posti limitati.",
+        "price": "Da € 60",
+        "image": { "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80", "alt": "Degustazione di vini" },
+        "cta": { "label": "Chiedi le prossime date", "action": "booking" }
+      }
+    ]
+  },
+
+  "reviews": {
+    "enabled": true,
+    "id": "recensioni",
+    "navLabel": "Dicono di noi",
+    "eyebrow": "Recensioni",
+    "title": "Dicono di noi",
+    "sources": [
+      { "name": "Google", "rating": 4.8, "count": 640, "url": "https://www.google.com/maps" },
+      { "name": "TripAdvisor", "rating": 4.5, "count": 410, "url": "https://www.tripadvisor.it" }
+    ],
+    "items": [
+      { "author": "Giulia M.", "rating": 5, "text": "Il brodetto più buono mai mangiato a Pesaro. Servizio attento e una vista sul mare che vale il viaggio.", "source": "Google", "date": "Settembre 2026" },
+      { "author": "Luca B.", "rating": 5, "text": "Passatelli con vongole e salicornia indimenticabili. Carta dei vini marchigiani ricca e ben raccontata.", "source": "TripAdvisor", "date": "Agosto 2026" },
+      { "author": "Sofia R.", "rating": 4.5, "text": "Crudo freschissimo e personale gentilissimo. Perfetto per una cena romantica.", "source": "Google", "date": "Luglio 2026" },
+      { "author": "Andrea P.", "rating": 5, "text": "Abbiamo fatto la degustazione 'il mare in sette atti': ogni piatto una sorpresa. Torneremo.", "source": "Google", "date": "Giugno 2026" }
+    ]
+  },
+
+  "contactSection": {
+    "enabled": true,
+    "id": "contatti",
+    "navLabel": "Contatti",
+    "eyebrow": "Vieni a trovarci",
+    "title": "Contatti e prenotazioni",
+    "intro": "Siamo sul lungomare di Pesaro, a due passi dalla Palla di Pomodoro. Ti aspettiamo.",
+    "showMap": true
+  },
+
+  "footer": {
+    "tagline": "Cucina di mare marchigiana sul lungomare di Pesaro.",
+    "social": [
+      { "platform": "instagram", "url": "https://www.instagram.com/", "label": "Instagram" },
+      { "platform": "facebook", "url": "https://www.facebook.com/", "label": "Facebook" },
+      { "platform": "tripadvisor", "url": "https://www.tripadvisor.it/", "label": "TripAdvisor" }
+    ],
+    "legal": {
+      "companyName": "Salicornia S.r.l.",
+      "vatNumber": "01234567890",
+      "registeredOffice": "Viale Trieste 1, 61121 Pesaro (PU)"
+    },
+    "credits": { "label": "Sito realizzato da", "name": "Il tuo studio", "url": "https://example.com" }
+  },
+
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updatedAt": "2026-10-01",
+      "intro": "Questa informativa descrive come {{companyName}} tratta i dati personali degli utenti che visitano {{siteUrl}}, ai sensi del Regolamento (UE) 2016/679 (GDPR).",
+      "sections": [
+        { "heading": "Titolare del trattamento", "body": ["{{companyName}}, con sede in {{address}}, P.IVA {{vatNumber}}. Email: {{email}} · Telefono: {{phone}}."] },
+        { "heading": "Dati trattati", "body": ["Dati di navigazione raccolti automaticamente dai sistemi informatici (indirizzo IP, tipo di browser, orari di accesso).", "Dati forniti volontariamente dall'utente quando richiede una prenotazione o ci contatta via telefono, email o WhatsApp (nome, numero di telefono, data e numero di persone, eventuali note)."] },
+        { "heading": "Finalità e base giuridica", "body": ["Gestione delle richieste di prenotazione e di contatto (esecuzione di misure precontrattuali, art. 6.1.b GDPR).", "Funzionamento e sicurezza del sito (legittimo interesse, art. 6.1.f GDPR)."] },
+        { "heading": "Conservazione", "body": ["I dati delle prenotazioni sono conservati per il tempo necessario a gestire la richiesta e comunque non oltre 12 mesi, salvo obblighi di legge."] },
+        { "heading": "Servizi di terze parti", "body": ["Le richieste inviate tramite WhatsApp sono trattate anche da WhatsApp Ireland Ltd secondo la propria informativa. La mappa integrata è fornita da Google LLC."] },
+        { "heading": "Diritti dell'interessato", "body": ["Puoi chiedere in ogni momento accesso, rettifica, cancellazione, limitazione od opposizione al trattamento scrivendo a {{email}}. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali."] }
+      ]
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "updatedAt": "2026-10-01",
+      "intro": "Questa pagina descrive i cookie e le tecnologie simili utilizzate su {{siteUrl}}.",
+      "sections": [
+        { "heading": "Cookie tecnici", "body": ["Il sito utilizza solo cookie tecnici necessari al funzionamento, per i quali non è richiesto il consenso (art. 122 del Codice Privacy)."] },
+        { "heading": "Contenuti di terze parti", "body": ["La mappa di Google Maps incorporata nella pagina contatti può installare cookie di Google LLC. Se il sito viene esteso con strumenti di analisi o marketing, sarà necessario un banner per la raccolta del consenso."] },
+        { "heading": "Gestione dei cookie", "body": ["Puoi bloccare o cancellare i cookie dalle impostazioni del tuo browser. Per informazioni: {{email}}."] }
+      ]
+    }
+  },
+
+  "labels": {
+    "skipToContent": "Vai al contenuto principale",
+    "openMenu": "Apri il menu di navigazione",
+    "closeMenu": "Chiudi il menu di navigazione",
+    "mainNavigation": "Navigazione principale",
+    "scrollDown": "Scopri di più",
+    "menuTabs": "Categorie del menu",
+    "allergens": "Allergeni",
+    "allergensLegend": "Legenda allergeni (Reg. UE 1169/2011)",
+    "tagsLegend": "Legenda",
+    "downloadMenu": "Scarica il menu in PDF",
+    "hoursTitle": "Orari di apertura",
+    "closed": "Chiuso",
+    "today": "Oggi",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "openInMaps": "Apri in Google Maps",
+    "mapTitle": "Mappa con la posizione del ristorante",
+    "ratingOutOf": "su 5",
+    "reviewsCount": "recensioni",
+    "readOnSource": "Leggi tutte su",
+    "followUs": "Seguici",
+    "contactsTitle": "Contatti",
+    "vat": "P.IVA",
+    "allRightsReserved": "Tutti i diritti riservati",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "lastUpdated": "Ultimo aggiornamento",
+    "backHome": "Torna alla home",
+    "notFoundTitle": "Pagina non trovata",
+    "notFoundText": "La pagina che cerchi non esiste o è stata spostata.",
+    "bookingForm": {
+      "title": "Richiedi una prenotazione",
+      "intro": "Compila il modulo: ti risponderemo su WhatsApp per confermare il tavolo.",
+      "name": "Nome e cognome",
+      "phone": "Telefono",
+      "date": "Data",
+      "time": "Orario",
+      "guests": "Persone",
+      "notes": "Note (allergie, occasioni speciali...)",
+      "submit": "Invia richiesta",
+      "privacyNote": "Inviando la richiesta accetti il trattamento dei dati secondo la nostra privacy policy.",
+      "messageIntro": "Buongiorno, vorrei prenotare un tavolo:"
+    }
+  }
+}
